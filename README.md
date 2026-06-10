@@ -4,7 +4,7 @@ You will be working with a partner to practice technical interviews. One person 
 
 
 ## Step 1
-**Decide with your partner who will present which questiosn now**
+**Decide with your partner who will present which questions now (who will present "Red" and who will present "Blue")**
 
 DO NOT YET LOOK AT ANY OF THE FILES in `src`
 
@@ -27,7 +27,7 @@ Read through the solution. Understand the question that is being asked, and how 
 ## Step 4
 After 10 minutes, choose one person to be interviewer first. 
 
-Prepare a timer for 25 minutes, but do not start it yet.
+Prepare a timer for 20 minutes, but do not start it yet.
 
 Open the question on the candidate's computer. For example, if you are presenting (are the interviewer for) Blue, then your partner (the candidate) should open `BlueQ1.java` on their computer. Both partners should look at the candidate's computer together throughout the interview.
 
@@ -45,7 +45,7 @@ DO NOT USE AI AT ANY POINT
 If the candidate solves the problem and is passing all tests before time is up, switch to the next problem. Keep the same timer going throughout.
 
 ## Step 5 (Once time is up)
-Once the 25 minute timer goes off, stop the interview, regardless of how much progress was made. It is OK and expected not to finish! Take a short (5-10 minute) break. Then switch roles and do the interview for the other question.
+Once the 20 minute timer goes off, stop the interview, regardless of how much progress was made. It is OK and expected not to finish! Chat about how the interview went with your partner. Then switch roles and do the interview for the other question.
 
 
 ## Step 6
