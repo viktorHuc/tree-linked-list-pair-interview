@@ -32,7 +32,53 @@ public class BlueQ2 {
      * @return "list" if the list has a bigger range, "tree" otherwise
      */
     public static String biggerRange(ListNode head, TreeNode root) {
-        return null;
+        int high = highestInTree(root);
+        int low = lowestInTree(root);
+
+        int highList = Integer.MIN_VALUE;
+        int lowList = Integer.MAX_VALUE;
+        ListNode current = head;
+        while (current != null) {
+            if(current.data < lowList){
+                lowList = current.data;
+            }
+            if(current.data > highList){
+                highList = current.data;
+            }
+            current = current.next;
+        }
+
+        int difference = (high - low) - (highList - lowList);
+        if(difference > 0 ){
+            return "tree";
+        }
+        return "list";
+    }
+
+    public static int highestInTree(TreeNode root){
+        int highest = Integer.MIN_VALUE;
+        if(root == null) return highest;
+
+        if(root.data > highest) highest = root.data;
+        int left = highestInTree(root.left);
+        int right = highestInTree(root.right);
+        if(left >  highest) highest = left;
+        if(right > highest) highest = right;
+
+        return highest;
+    }
+
+    public static int lowestInTree(TreeNode root){
+        int lowest = Integer.MAX_VALUE;
+        if(root == null) return lowest;
+
+        if(root.data < lowest) lowest = root.data;
+        int left = lowestInTree(root.left);
+        int right = lowestInTree(root.right);
+        if(left <  lowest) lowest = left;
+        if(right < lowest) lowest = right;
+
+        return lowest;
     }
 
 
